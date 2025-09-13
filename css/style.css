@@ -24,7 +24,7 @@ body {
 }
 
 /* Centered horizontal navigation (identical on every page) */
-.site-nav {
+.site-nav, body > ul:first-of-type {
   display: flex;                        /* shared #1 */
   justify-content: center;              /* shared #2 */
   gap: var(--s2);
@@ -32,13 +32,15 @@ body {
   margin: 0;
   padding: var(--s2) 0;                 /* shared #4 */
 }
-.site-nav a {
+.site-nav a, body > ul:first-of-type a {
   text-decoration: none;                /* shared #5 */
   padding: var(--s1) var(--s2);
   display: inline-block;
 }
 .site-nav a:hover,
-.site-nav a:focus { text-decoration: underline; }
+.site-nav a:focus,
+body > ul:first-of-type a:hover,
+body > ul:first-of-type a:focus { text-decoration: underline; }
 
 /* Global type & media */
 h1, h2, h3 { margin-top: var(--s3); margin-bottom: var(--s1); }
