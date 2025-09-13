@@ -20,7 +20,7 @@ body {
 .wrapper {
   max-width: var(--maxw);               /* fluid container using rem */
   margin-inline: auto;
-  padding-inline: var(--s2);
+  padding: var(--s3);
 }
 
 /* Centered horizontal navigation (identical on every page) */
