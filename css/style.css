@@ -1,41 +1,33 @@
-:root {
-  --maxw: 72rem;
-  --s1: 0.5rem;
-  --s2: 1rem;
-  --s3: 1.5rem;
-  --s4: 2rem;
-}
-
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.6;
-  margin: var(--s2);
+  margin: 1rem;
 }
 
 .wrapper {
-  max-width: var(--maxw);
+  max-width: 60rem;
   margin: 0 auto;
-  padding: var(--s3);
+  padding: 1.5rem;
 }
 
 .site-nav { width: 100%; overflow: hidden; }
 .site-nav ul { list-style: none; margin: 0; padding: 0; width: fit-content; margin-left: auto; margin-right: auto; }
-.site-nav li { float: left; margin: 0 var(--s2); }
-.site-nav a { text-decoration: none; padding: var(--s1) var(--s2); display: block; }
+.site-nav li { float: left; margin: 0 1rem; }
+.site-nav a { text-decoration: none; padding: 0.5rem 1rem; display: block; }
 .site-nav a:hover, .site-nav a:focus { text-decoration: underline; }
 
-h1, h2, h3 { margin-top: var(--s3); margin-bottom: var(--s1); }
-p { margin: 0 0 var(--s2) 0; }
+h1, h2, h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+p { margin: 0 0 1rem 0; }
 
 img {
   width: 100%;
   max-width: 37.5rem;
   height: auto;
   display: block;
-  margin: var(--s2) auto;
+  margin: 1rem auto;
 }
 
 .clearfix::after { content: ""; display: table; clear: both; }
@@ -45,7 +37,7 @@ img {
   text-align: center;
   border: 0.125rem solid #ddd;
   border-radius: 0.5rem;
-  margin-block: var(--s3);
+  margin: 1.5rem 0;
   background: #fff;
 }
 .index-hero h2 { letter-spacing: 0.02em; }
@@ -54,23 +46,23 @@ img {
 .resume {
   width: 60rem;
   max-width: 100%;
-  margin: var(--s3) auto;
-  padding: var(--s3);
+  margin: 1.5rem auto;
+  padding: 1.5rem;
   border: 0.125rem solid #e0e0e0;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
   background: #fff;
 }
 .resume h1 { font-size: 2rem; }
 .resume ul { list-style: none; padding-left: 0; }
-.resume figure { margin-top: var(--s3); text-align: center; }
+.resume figure { margin-top: 1.5rem; text-align: center; }
 
 .page3 {
-  margin: var(--s3) 0;
-  padding: var(--s3);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
   background: #0f172a;
   color: #f8fafc;
 }
 .page3 a { color: #93c5fd; }
-.page3 article { margin-bottom: var(--s3); }
+.page3 article { margin-bottom: 1.5rem; }
 .page3 h2 { margin-top: 0; }
 .page3 figure { text-align: center; }
