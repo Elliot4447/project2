@@ -18,7 +18,7 @@ body {
 
 .wrapper {
   max-width: var(--maxw);               /* fluid container using rem */
-  margin-inline: auto;
+  margin: 0 auto;
   padding: var(--s3);
 }
 
@@ -34,24 +34,26 @@ h1, h2, h3 { margin-top: var(--s3); margin-bottom: var(--s1); }
 p { margin: 0 0 var(--s2) 0; }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 37.5rem;
   height: auto;
   display: block;
-  margin: var(--s2) auto;     /* center images */
-  max-width: 37.5rem;         /* ~600px cap (allowed as max size) */
-  max-height: 37.5rem;        /* ~600px cap */
+  margin: var(--s2) auto;
 }
+
+/* simple clearfix for floated elements */
+.clearfix::after { content: ""; display: table; clear: both; }
 
 /* ========= Page-specific differences ========= */
 
 /* index.html — fluid layout demo */
 .index-hero {
-  padding: clamp(2rem, 6vw, 6rem);      /* relative/fluid spacing */
+  padding: 2rem;      /* relative/fluid spacing */
   text-align: center;
   border: 0.125rem solid #ddd;          /* thin border using rem */
   border-radius: 0.5rem;
   margin-block: var(--s3);
-  background: linear-gradient(180deg, #f7f7f7, #fff);
+  background: #fff;
 }
 .index-hero h2 { letter-spacing: 0.02em; }
 .index-hero p { font-size: 1.125rem; }
@@ -72,7 +74,7 @@ img {
 
 /* projects.html — alternate color scheme & layout */
 .page3 {
-  margin-block: var(--s3);
+  margin: var(--s3) 0;
   padding: var(--s3);
   background: #0f172a;                   /* dark slate */
   color: #f8fafc;
@@ -81,11 +83,3 @@ img {
 .page3 article { margin-bottom: var(--s3); }
 .page3 h2 { margin-top: 0; }
 .page3 figure { text-align: center; }
-
-/* Utility (optional) */
-.visually-hidden {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden;
-  clip: rect(0, 0, 1px, 1px); white-space: nowrap; border: 0;
-}
