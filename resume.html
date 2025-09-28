@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Andres Sanchez</title>
   <link rel="stylesheet" href="css/reset.css">
@@ -10,71 +10,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <nav>
+<body class="resume">
+  <nav class="site-nav clearfix">
     <ul>
-      <li><a href="index.html">index.html</a></li>
-      <li><a href="resume.html">resume.html</a></li>
-      <li><a href="page3.html">page3.html</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="page3.html">Page 3</a></li>
     </ul>
   </nav>
 
-  <h1>Andres Sanchez</h1>
-  <p>Quito, Ecuador • wsanchez2@hawk.illinoistech.edu • github.com/elliot4447</p>
+  <main>
+    <section>
+      <h1>Andres Sanchez</h1>
+      <p>Quito, Ecuador • wsanchez2@hawk.illinoistech.edu • github.com/elliot4447</p>
+    </section>
 
-  <h2>Professional Summary</h2>
-  <p>
-    I am a university instructor who also enjoys learning web development. I like working with clear and simple HTML and keeping my pages accessible. I'm excited about building websites that are easy to navigate and understand.
-  </p>
+    <section class="columns clearfix">
+      <div class="col float-left">
+        <h2>Skills</h2>
+        <ul>
+          <li>Semantic HTML5 (forms, lists, media)</li>
+          <li>Accessible markup with labels and fieldsets</li>
+          <li>Git and GitHub workflows (clone, commit, push)</li>
+          <li>Command line basics and VS Code</li>
+          <li>Basic image, audio, and video embedding</li>
+        </ul>
+      </div>
+      <div class="col float-left">
+        <h2>Education</h2>
+        <ul>
+          <li>Fundamentals of Web Development (Coursera), Illinois Tech. I am currently taking this course.</li>
+          <li>Graduate studies in Education. Completed.</li>
+        </ul>
+      </div>
+    </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Semantic HTML5 (forms, lists, media)</li>
-    <li>Accessible markup with labels and fieldsets</li>
-    <li>Git and GitHub workflows (clone, commit, push)</li>
-    <li>Command line basics and VS Code</li>
-    <li>Basic image, audio, and video embedding</li>
-  </ul>
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        I am a university instructor who also enjoys learning web development. I like working with clear and simple HTML and keeping my pages accessible. I'm excited about building websites that are easy to navigate and understand.
+      </p>
+    </section>
 
-  <h2>Experience</h2>
-  <section>
-    <h3>University English Professor</h3>
-    <p>I have designed and taught lessons for learners at different levels, focusing on clear explanations and helpful feedback. I created assessments, rubrics, and materials that support student learning.</p>
-    <ul>
-      <li>I developed multi lesson units and quizzes that follow CEFR standards.</li>
-      <li>I made classroom handouts and digital resources using simple HTML when it made sense.</li>
-      <li>I worked closely with colleagues to plan and improve our curriculum.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Experience</h2>
+      <section>
+        <h3>University English Professor</h3>
+        <p>I have designed and taught lessons for learners at different levels, focusing on clear explanations and helpful feedback. I created assessments, rubrics, and materials that support student learning.</p>
+        <ul>
+          <li>I developed multi lesson units and quizzes that follow CEFR standards.</li>
+          <li>I made classroom handouts and digital resources using simple HTML when it made sense.</li>
+          <li>I worked closely with colleagues to plan and improve our curriculum.</li>
+        </ul>
+      </section>
 
-  <section>
-    <h3>Web Development Projects</h3>
-    <p>In my course projects, I focused on building clean HTML pages with good structure and accessible forms.</p>
-    <ul>
-      <li>I created a three page website without using CSS, relying on unordered lists for navigation and internal links.</li>
-      <li>I implemented accessible form controls using proper <code>label</code> and <code>fieldset</code> elements.</li>
-      <li>I checked my pages with the W3C HTML Validator to make sure they were error free.</li>
-    </ul>
-  </section>
+      <section>
+        <h3>Web Development Projects</h3>
+        <p>In my course projects, I focused on building clean HTML pages with good structure and accessible forms.</p>
+        <ul>
+          <li>I created a three page website without using CSS, relying on unordered lists for navigation and internal links.</li>
+          <li>I implemented accessible form controls using proper <code>label</code> and <code>fieldset</code> elements.</li>
+          <li>I checked my pages with the W3C HTML Validator to make sure they were error free.</li>
+        </ul>
+      </section>
+    </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Fundamentals of Web Development (Coursera), Illinois Tech. I am currently taking this course.</li>
-    <li>Graduate studies in Education. Completed.</li>
-  </ul>
+    <section>
+      <h2>Selected Achievements</h2>
+      <ul>
+        <li>I consistently create HTML that passes validation with no errors.</li>
+        <li>I have developed lesson materials that focus on clarity and making content easy to access.</li>
+        <li>I have integrated multimedia elements like images, audio, and video using just HTML.</li>
+      </ul>
 
-  <h2>Selected Achievements</h2>
-  <ul>
-    <li>I consistently create HTML that passes validation with no errors.</li>
-    <li>I have developed lesson materials that focus on clarity and making content easy to access.</li>
-    <li>I have integrated multimedia elements like images, audio, and video using just HTML.</li>
-  </ul>
-
-  <h2>Interests</h2>
-  <ul>
-    <li>I am passionate about human centered design and making websites accessible to everyone.</li>
-    <li>I enjoy exploring education technology and ways to improve assessment.</li>
-    <li>I support open web standards and the principles behind them.</li>
-  </ul>
+      <h2>Interests</h2>
+      <ul>
+        <li>I am passionate about human centered design and making websites accessible to everyone.</li>
+        <li>I enjoy exploring education technology and ways to improve assessment.</li>
+        <li>I support open web standards and the principles behind them.</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
