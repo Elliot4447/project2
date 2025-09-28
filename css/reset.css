@@ -25,6 +25,8 @@ header { margin: 0; padding: 0; }
 nav { margin: 0; padding: 0; }
 section { margin: 0; padding: 0; }
 main { margin: 0; padding: 0; }
+article { margin: 0; padding: 0; }
+aside { margin: 0; padding: 0; }
 ol { list-style: none; }
 ul { list-style: none; }
 img { max-width: 100%; }
