@@ -25,4 +25,5 @@ section { margin: 0; padding: 0; }
 main { margin: 0; padding: 0; }
 ol { list-style: none; }
 ul { list-style: none; }
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; }
+img { height: auto; }
